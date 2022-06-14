@@ -2,7 +2,7 @@ import React from "react";
 import Background from "./../images/background.jpg";
 import { useState } from "react";
 import style from "./styles.js";
-import AdministrationImageCard from "../components/AdministrationImageCard";
+import AdministrationImageCard from "../components/AdministrationCards/AdministrationImageCard";
 
 const Administration = () => {
   const myStyle = {

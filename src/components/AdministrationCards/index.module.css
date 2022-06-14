@@ -1,0 +1,50 @@
+.parent {
+  display: flex;
+  border-radius: 30px;
+  justify-content: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.textbox {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 13px;
+  background: white;
+  color: black;
+}
+
+.hover {
+  background: #ff4545;
+  color: white;
+}
+
+.title {
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.learnMore {
+  color: red;
+  font-size: 10px;
+  padding-left: 5px;
+}
+
+.learnHover {
+  color: white;
+}
