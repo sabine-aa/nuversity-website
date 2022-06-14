@@ -19,10 +19,9 @@ const Administration = () => {
 
   return (
     <>
-    <>
-      <div style={ myStyle }>
+      <div style={myStyle}>
         <div
-          style={ {
+          style={{
             display: "flex",
             flexDirection: "column",
             paddingTop: "300px",
@@ -30,31 +29,31 @@ const Administration = () => {
             justifyContent: "center",
             alignItems: "flex-start",
             marginRight: "2rem",
-          } }
+          }}
         >
           <div
-            style={ {
+            style={{
               fontWeight: "bold",
               fontSize: "33px",
-            } }
+            }}
           >
-            { " " }
+            {" "}
             Your Journey At
           </div>
 
           <text
-            style={ {
+            style={{
               fontWeight: "bolder",
               fontSize: "35px",
-            } }
+            }}
           >
             Nuversity Starts Here
           </text>
           <br />
           <text
-            style={ {
+            style={{
               fontSize: "13px",
-            } }
+            }}
           >
             The members of Nuversity respect disciplined analytical thinking,
             <br />
@@ -66,45 +65,46 @@ const Administration = () => {
       </div>
       <body>
         <div
-          style={ {
+          style={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             marginTop: "7rem",
             marginBottom: "5rem",
-          } }
+          }}
         >
           <div
-            style={ {
+            style={{
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "flex-start",
               marginRight: "2rem",
-            } }
+            }}
           >
             <h1
-              style={ {
+              style={{
                 fontWeight: "bold",
                 color: "darkred",
                 fontSize: "45px",
-              } }
+              }}
             >
-              { " " }
+              {" "}
               Our Mission
               <br />
             </h1>
             <br />
             <text
-              style={ {
+              style={{
                 fontStyle: "SegoeUISemibold",
                 color: "grey",
                 fontSize: "13px",
-              } }
+              }}
             >
               We look for applicants with similar abilities, interests, and
               <br />
-              values in our undergraduate, and professional admissions.<br />
+              values in our undergraduate, and professional admissions.
+              <br />
               We are very varied community, drawing students from all
               <br />
               countries, because Nuversity is established for innovatiion
@@ -112,312 +112,221 @@ const Administration = () => {
               of talents amd good ideas.
             </text>
           </div>
-          <div style={ { marginLeft: "6rem" } }>
+          <div style={{ marginLeft: "6rem" }}>
             <img
               src="/images/admission1.jpg"
               alt="admission1"
               height="100%"
-              width="auto" />
+              width="auto"
+            />
             ;
           </div>
         </div>
       </body>
       <div
-        style={ {
+        style={{
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-        } }
+        }}
       >
         <h1
-          style={ {
+          style={{
             fontWeight: "bold",
             color: "darkred",
             justifyContent: "center",
             fontSize: "40px",
             paddingLeft: "475px",
-          } }
+          }}
         >
-          { " " }
+          {" "}
           Undergraduate Admissions
           <br />
         </h1>
         <br />
         <text
-          style={ {
+          style={{
             display: "flex",
             fontStyle: "SegoeUISemibold",
             color: "Black",
             justifyContent: "center",
             fontSize: "13px",
-          } }
+          }}
         >
           Top 10 Big Data and Data Science Influencer, Director -Adversitement
           <br />
         </text>
         <text
-          style={ {
+          style={{
             display: "flex",
             fontStyle: "SegoeUISemibold",
             color: "Black",
             justifyContent: "center",
             fontSize: "13px",
-          } }
+          }}
         >
           Named by Onalytica as one of the three most influential people in Big
           Data, Ronald is also an author of a number of
           <br />
         </text>
         <text
-          style={ {
+          style={{
             display: "flex",
             fontStyle: "SegoeUISemibold",
             color: "Black",
             justifyContent: "center",
             fontSize: "13px",
-          } }
+          }}
         >
           leading Big Data and Data Science websites, including Datafloq, Data
           Science Central, and The Guardian. He also
           <br />
         </text>
         <text
-          style={ {
+          style={{
             display: "flex",
             fontStyle: "SegoeUISemibold",
             color: "Black",
             justifyContent: "center",
             fontSize: "13px",
-          } }
+          }}
         >
           regularly speaks at renowned events.
           <br />
         </text>
       </div>
       <h1
-        style={ {
+        style={{
           fontWeight: "bold",
           color: "darkred",
           justifyContent: "center",
           fontSize: "40px",
           display: "flex",
-        } }
+        }}
       >
         <br />
         <br /> Top Resources
       </h1>
       <br />
       <br />
-      <AdministrationImageCard />
       <div
-        style={ {
-          marginLeft: "6rem",
+        style={{
           display: "flex",
-          justifyContent: "space-between",
-          flexDirection: "column",
-        } }
+          justifyContent: "center",
+          marginBottom: "4rem",
+        }}
       >
-        <img
-          src="/images/admission2.jpg"
-          alt="admission3"
-          height="100%"
-          width="auto" />
-        <textbox
-          style={ {
-            border: "2px solid light grey",
-            borderBottomLeftRadius: "10px",
-            borderBottomRightRadius: "10px",
-            fontSize: "13px",
-            ...style.normal,
-            ...( hoverLeft ? style.hover : null ),
-          } }
-          onMouseEnter={ () =>
-          {
-            setHoverLeft( true );
-          } }
-          onMouseLeave={ () =>
-          {
-            setHoverLeft( false );
-          } }
-        >
-          <br />
-          <div style={ { fontWeight: "bold", paddingLeft: "5px" } }>
-            { " " }
-            Undergraduate Admissions
-          </div>
-          <br />
-          <div style={ { color: "red", fontSize: "10px", paddingLeft: "5px" } }>
-            { " " }
-            Learn more
-          </div>
-          <br />
-        </textbox>
+        <AdministrationImageCard
+          image="admission1"
+          title="Undergraduate Admission"
+        />
+        <AdministrationImageCard
+          image="admission2"
+          title="Graduate Admission"
+        />
       </div>
-    </><div
-      style={ {
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-      } }
-    >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+        }}
+      >
         <br />
         <br />
         <br />
         <br />
         <br />
         <h1
-          style={ {
+          style={{
             fontWeight: "bold",
             color: "darkred",
             justifyContent: "center",
             fontSize: "40px",
             paddingLeft: "420px",
-          } }
+          }}
         >
-          { " " }
+          {" "}
           Professional & Executive Education
           <br />
         </h1>
         <br />
         <text
-          style={ {
+          style={{
             display: "flex",
             fontStyle: "SegoeUISemibold",
             color: "Black",
             justifyContent: "center",
             fontSize: "12px",
-          } }
+          }}
         >
           For professionals in the workforce and for learners anywhere eager for
           Nuversity content without the full-time
           <br />
         </text>
         <text
-          style={ {
+          style={{
             display: "flex",
             fontStyle: "SegoeUISemibold",
             color: "Black",
             justifyContent: "center",
             fontSize: "12px",
-          } }
+          }}
         >
           commitment of a traditional degree program, we offer a range of
           educational options--some online,some on
           <br />
         </text>
         <text
-          style={ {
+          style={{
             display: "flex",
             fontStyle: "SegoeUISemibold",
             color: "Black",
             justifyContent: "center",
             fontSize: "12px",
-          } }
+          }}
         >
           campus, and some a blend of both.
           <br />
         </text>
-      </div><br /><h1
-        style={ {
+      </div>
+      <br />
+      <h1
+        style={{
           fontWeight: "bold",
           color: "darkred",
           justifyContent: "center",
           fontSize: "40px",
           display: "flex",
-        } }
+        }}
       >
         <br />
         <br /> Top Resources
-      </h1><br /><br /><div
-        style={ {
+      </h1>
+      <br />
+      <br />
+      <div
+        style={{
           display: "flex",
-          borderRadius: "30px",
           justifyContent: "center",
-        } }
+          marginBottom: "4rem",
+        }}
       >
-        <div
-          style={ {
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            ...style.normal,
-            ...( hoverRight ? style.hover : null ),
-          } }
-          onMouseEnter={ () =>
-          {
-            setHoverRight( true );
-          } }
-          onMouseLeave={ () =>
-          {
-            setHoverRight( false );
-          } }
-        >
-          <img
-            src="/images/admission3.jpg"
-            alt="admission3"
-            height="100%"
-            width="auto" />
-          <textbox
-            style={ {
-              border: "5px darkgray",
-              borderBottomLeftRadius: "10px",
-              borderBottomRightRadius: "10px",
-              fontSize: "13px",
-            } }
-          >
-            <br />
-            <div style={ { fontWeight: "bold", paddingLeft: "5px" } }>
-              { " " }
-              Undergraduate Admissions
-            </div>
-            <br />
-            <div style={ { color: "red", fontSize: "10px", paddingLeft: "5px" } }>
-              { " " }
-              Learn more
-            </div>
-            <br />
-          </textbox>
-        </div>
-
-        <div
-          style={ {
-            marginLeft: "6rem",
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-          } }
-        >
-          <img
-            src="/images/admission2.jpg"
-            alt="admission3"
-            height="100%"
-            width="auto" />
-          <textbox
-            style={ {
-              border: "2px solid red",
-              borderBottomLeftRadius: "10px",
-              borderBottomRightRadius: "10px",
-              fontSize: "13px",
-            } }
-          >
-            <br />
-            <div style={ { fontWeight: "bold", paddingLeft: "5px" } }>
-              { " " }
-              Undergraduate Admissions
-            </div>
-            <br />
-            <div style={ { color: "red", fontSize: "10px", paddingLeft: "5px" } }>
-              { " " }
-              Learn more
-            </div>
-            <br />
-          </textbox>
-        </div>
-      </div><br /><br /><br /><br />
+        <AdministrationImageCard
+          image="admission3"
+          title="Postgraduate Admission"
+        />
+        <AdministrationImageCard
+          image="admission1"
+          title="Freshman Admission"
+        />
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
     </>
-    </>
-    );
-  
+  );
 };
 
 export default Administration;
